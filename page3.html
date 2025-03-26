@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-    <link rel="stylesheet" type="css" href="advanced.css">
-    <img src="images/googlelogo_color_272x92dp.png" alt="Google logo" width="74" height="24">
+<head>
+        <a href="index.html" target="top" role="button" 
+        style="position: absolute; top: 10px; right: 10px;">Google Search</a>
     <title>Advanced Search</title>
-        <h1 style="color:red;">Advanced Search</h1>
-   </head>
-    <body>
-        <a style="font-size: 12px; 10px; padding: 5px;>
-        <h2 style="color: grey; font-size: 16px;">Find pages with...<h2>
-        <form>
-            <input style="width: 500px;">
-            <br>
-            <input type="text" name="all of these words0">
-            <br>
-            <a>all of these words</a>
-            <input type="text" name="this exact word or phrase">
-            <br>
-            <a>all of these words</a>
-            <input type="text" name="any of these words">
-            <br>
-            <a>all of these words</a>
-            <input type="text" name="none of these words">
-            <br>
-            <input type="submit" value="Advanced Search">
-            <br>
-        </form> 
-        <input style="background: blue; color: white; display: block; margin: 0 auto;">
-        <input type="submit" value="Advanced Search">
-    </body>    
+    <style>
+        head {
+            margin: 40px;    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 400px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+        }
+
+        input {
+            max-width: 400px;
+            align-items: flex-end;
+            margin: 10px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>    
+<body>
+    <body style="">
+    <h1>Advanced Search</h1>
+    <h2>Find pages with...</h2>
+      <div>
+        <label for="all these words">all these words:</label>
+        <input type="text" id="all these words" name="all these words"
+         style="border-radius: 1px; border: 1px solid; height: 19px;"><br>
+      </div>
+
+    <div>
+        <label for="this exact word or phrase">this exact word or phrase:</label>
+        <input type="text" id="this exact word or phrase" name="this exact word or phrase"
+         style="border-radius: 1px; border: 1px solid; height: 19px;"><br>
+    </div>
+
+    <div>
+        <label for="any of these words">any of these words:</label>
+        <input type="text" id="any of these words" name="any of these words"
+         style="border-radius: 1px; border: 1px solid; height: 19px;"><br>
+    </div>
+
+    <div>
+        <label for="none of these words">none of these words:</label>
+        <input type="text" id="none of these words" name="none of these words"
+         style="border-radius: 1px; border: 1px solid; height: 19px;"><br>
+    </div>
+    </form>
+</body>
 </html>
