@@ -1,67 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>  
-        <style>
-            head {
-            margin: 40px;    
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 400px;
-            }
-
-            body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            }
-
-            input {
-            max-width: 400px;
-            align-items: justify center;
-            margin: 10px;
-            background-color: whitesmoke;
-            border-radius: 5px;
-            padding: 10px;
-            }
-
-            div {
-            display: flex;
-            justify-content: center;
-            border-radius: 7px;
-            margin: 10px;
-            padding: 10px;
-            font-size: 9px;
-            }
-        </style>
-
-        <img src="googlelogo_color_272x92dp.png" alt="Google logo" width="400px">
-
-        <nav style="position: absolute; top: 0; width: 100%; display: flex;
-        justify-content: right; background-color: white; padding: 10px 0;">
-            <a href="page2.html" style="margin: 0 15px; font: roboto, arial, sans-serif;
-             color: black;">Google Images</a>
-            <a href="page3.html" style="margin: 0 15px; font: roboto, arial, sans-serif;
-             color: black;">Advanced Search</a>
-        </nav>
-    </nav>
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
-<body>
-    <span> 
-        <form action="https://www.google.com/search">
-            <input type="text" name="q" style="width: 400px; height: 20px; 
-            border-radius: 20px; background-color: rgb(253, 253, 253); padding-top: 11px;
-            padding-bottom: 11px;">
+    <body>
         <div>
-            <input type="submit" value="Google Search">
-          <!--  <input type="submit" value="I'm Feeling Lucky"> -->
-            <input id="lucky" value="I'm Feeling Lucky" 
-            aria-label="I'm Feeling Lucky" name="btnI" role="button" 
-            tabindex="0" type="submit" data-ved="0ahUKEwiztufZvKGMAxWnADQIHSVMBkUQnRsIIQ" 
-            style="visibility: inherit; font: roboto, aria-family, sans-serif;">
+            <ul class="navbar-google">
+                <li class="navbar-item-google"><a href="page2.html"></a>Images</li>
+                <li class="navbar-item-google"><a href="page3.html">Advanced search</a></li>
+            </ul>
         </div>
-    </span>
-</form>
-</body>
-</html>
+        <div class="center-div">
+            <img src="googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" class="rounded-input">
+                <div class="center-div">
+                <input type="submit" value="Google Search" class="btn-google">
+                <input type="submit" name="btnI" value="Im Feeling Lucky" class="btn-google">
+                </div>
+        </form>
+    </body>
+    </html>
